@@ -1,0 +1,35 @@
+version: "3.8"
+services:
+  c1:
+    build:
+      context: ./C1
+    container_name: c1
+    tty: true
+    stdin_open: true
+
+
+  c2:
+    build:
+      context: ./C2
+    container_name: c2
+    tty: true
+    stdin_open: true
+
+
+  c3:
+    build:
+      context: ./C3
+    container_name: c3
+    tty: true
+    stdin_open: true
+
+
+  c4:
+    build:
+      context: ./C4
+    container_name: c4
+    tty: true
+    stdin_open: true
+    ports:
+      - "2222:22"
+
